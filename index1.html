@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript">
+                  // Set the date we're counting down to
+          var countDownDate = new Date("Sep 12, 2024 00:00:00").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result in the elements with id
+          document.getElementById("days").innerHTML = days;
+          document.getElementById("hours").innerHTML = hours;
+          document.getElementById("minutes").innerHTML = minutes;
+          document.getElementById("seconds").innerHTML = seconds;
+
+          // If the count down is over, write some text
+          if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("days").innerHTML = "00";
+              document.getElementById("hours").innerHTML = "00";
+              document.getElementById("minutes").innerHTML = "00";
+              document.getElementById("seconds").innerHTML = "00";
+      }
+      },1000);
+    </script>
+  </head>
+
+  <body>
+    <div id="background-image-section" class="background-image-section">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">REGISTER</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">COMMITIEES</a>
+                </li>
+                <div class="logo-img text-center">
+                  <img
+                    src="LOGOPNGWHITE (1).png"
+                    alt="Image"
+                    class="img-fluid"
+                    width="400"
+                  />
+                </div>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">GALLERY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">MATRIX</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">AMIMUN</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+  
+        <!-- Content under the navbar -->
+        <div class="container">
+          <div class="row">
+            <div class="col mx-auto">
+              <h1 class="amitymodelheading text-center">
+                LIFE - Lifestyle for <br />Environment'
+              </h1>
+              <p class="text-center text-white">12TH Sept-13TH Sept 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container1 my-5">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h2>CONFERENCE BEGINS IN</h2>
+          </div>
+          <div class="col-12 d-flex justify-content-center align-items-center">
+            <div class="img-container">
+              <img src="LogoOnly.png" width="150" alt="AMYUMN" />
+            </div>
+            <div class="timer-container d-flex justify-content-center align-items-center">
+              <div class="time-box">
+                <span id="days">00</span>
+                <p>Days</p>
+              </div>
+              <div class="separator">:</div>
+              <div class="time-box">
+                <span id="hours">00</span>
+                <p>Hours</p>
+              </div>
+              <div class="separator">:</div>
+              <div class="time-box">
+                <span id="minutes">00</span>
+                <p>Mins</p>
+              </div>
+              <div class="separator">:</div>
+              <div class="time-box">
+                <span id="seconds">00</span>
+                <p>Secs</p>
+              </div>
+            </div>
+            <div class="img-container1">
+              <img src="LogoOnly.png" width="150" alt="AMYUMN" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <div class="welcome-area">
+        <div class="container-fluid mx-5">
+            <div class="row ">
+                <div class="col the-text">
+                    <h1 class="first col the-text">
+                        Welcome to AMYUN'24
+                    </h1>
+                    <p>I extend to you all a heartfelt welcome to the prestigious 13th edition of the Amity
+                        International Model United Nations (AMIMUN'24). It is with great pleasure that I, Gauri Sareen,
+                        the Secretary-General of AMIMUN’24, invite you to join us at Amity University, Uttar Pradesh,
+                        for an enriching and enlightening experience from Friday, January 19th, to Sunday, January 21st,
+                        2024. AMIMUN has consistently evolved over the years, becoming a beacon of excellence within the
+                        Indian MUN circuit and attracting a diverse and accomplished international delegation. Our
+                        commitment to fostering meaningful dialogue and promoting innovative solutions to global
+                        challenges remains steadfast. In pursuit of these objectives, the theme for AMIMUN'24 is "Pax
+                        Per Praxis," which translates to "Peace Through Action." Our theme underscores the significance
+                        of action, of turning noble words into impactful deeds. It beckons us to explore the realms of
+                        hope, resilience, and shared sovereignty. It is our belief that true change is born from
+                        audacious decisions and unwavering commitment. We firmly believe that actions speak louder than
+                        words, and it is through our collective efforts that we can bring about the positive change the
+                        world needs. This conference offers you not only a platform to showcase your debating and
+                        diplomatic skills but also an opportunity to inspire change and champion resilience. Our team is
+                        dedicated to ensure that your AMIMUN'24 experience transcends the committee rooms. We aim to
+                        provide an environment that stimulates personal growth and international collaboration,
+                        preparing you to become leaders in an ever-changing world. It is our hope that you will leave
+                        this conference with a renewed sense of purpose and a commitment to creating a better future. I
+                        would like to express my sincere gratitude to our Founder President sir, Chancellor sir, our
+                        guiding light Vice Chancellor ma'am, dedicated Faculty Coordinators, invaluable Partners, and
+                        Sponsors for their unwavering support, which has made AMIMUN'24 possible. On behalf of the
+                        entire secretariat, I urge you to embrace this opportunity fully. Whether you are a seasoned
+                        delegate or new to the MUN world, rest assured that AMIMUN'24 will be a transformative
+                        experience.
+
+                    </p>
+                    <p>
+                        Gauri Sareen,<br>
+                        Secretary General,<br>
+                        Amity International Model United Nations
+                    </p>
+                </div>
+                <div class="col col-md-4s text-center">
+                    <img src="orange.jpg" width="500">
+                    <p>Devaansh Sisodia</p>
+                    <p>Secretary General</p>
+
+                   <div class="ine" style="height: 2px; background-color: black; margin: 40px auto ; width: 20vw;"></div>
+                </div>
+                
+            </div>
+            <div class="ine" style="height: 2px; background-color: black; margin: 40px auto ; width: 40vw;"></div>
+        </div>
+    </div>
+    <div class="container-fluid  textcont">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h2>Learn More</h2>
+                <hr class="learn-more-underline">
+            </div>
+        </div>
+        
+        <div class="row align-items-center my-4 mx-5">
+            <div class="col-md-6 order-md-2 text-center">
+                <img src="https://via.placeholder.com/150" class="img-fluid learn-more-img" alt="Placeholder Image">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo aliquet pulvinar. Vestibulum congue porttitor est ut viverra. Sed gravida hendrerit viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo aliquet pulvinar. Vestibulum congue porttitor est ut viverra. Sed gravida hendrerit viverra.</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+        </div>
+        
+        <div class="row align-items-center mx-5 ">
+            <div class="col-md-6 text-center">
+                <img src="https://via.placeholder.com/150" class="img-fluid learn-more-img" alt="Placeholder Image">
+            </div>
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo aliquet pulvinar. Vestibulum congue porttitor est ut viverra. Sed gravida hendrerit viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo aliquet pulvinar. Vestibulum congue porttitor est ut viverra. Sed gravida hendrerit viverra.</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+        </div>
+        
+        <div class="row align-items-center my-4 mx-5">
+            <div class="col-md-6 order-md-2 text-center">
+                <img src="https://via.placeholder.com/150" class="img-fluid learn-more-img" alt="Placeholder Image">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo aliquet pulvinar. Vestibulum congue porttitor est ut viverra. Sed gravida hendrerit viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo aliquet pulvinar. Vestibulum congue porttitor est ut viverra. Sed gravida hendrerit viverra.</p>
+                <button class="btn btn-dark">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <div class="ine" style="height: 2px; background-color: black; margin: 40px auto ; width: 40vw;"></div>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h2>Our Location</h2>
+            </div>
+            <div class="col-12">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.428573290407!2d-122.0842496846813!3d37.4220659798228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5e4b8b8b8b8%3A0x2b9e1b1e1b1e1b1e!2sGoogleplex!5e0!3m2!1sen!2sus!4v1605254811784!5m2!1sen!2sus"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact text-center">
+        <div class="container ">
+            <div class="row">
+                <div class="col">
+                   <h2>Contact us</h2>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Register</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Matrix</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contact</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
